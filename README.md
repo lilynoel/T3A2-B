@@ -37,6 +37,7 @@ Bone & Biscuit was created using the following tech stack:
 # R5. Produce a working application that meets client and user needs
 
 # R6. Deploy the application to a cloud hosting service
+<!-- Netlify or Heroku? -->
 
 # R7. Produce an application with an intuitive user interface
 
