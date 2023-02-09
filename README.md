@@ -28,24 +28,24 @@ Bone & Biscuit was created using the following tech stack:
 - Applies Object Oriented (OO) principles/patterns
 - Uses appropriate data structures
   
-# R3. Employ and utilise proper source control methodology (git)
+## R3. Employ and utilise proper source control methodology (git)
 
-# R4. Demonstrate your ability to work in a team
+## R4. Demonstrate your ability to work in a team
 - Use a recognised project management methodology
 - Use a recognised task delegation methodology
 
-# R5. Produce a working application that meets client and user needs
+## R5. Produce a working application that meets client and user needs
 
-# R6. Deploy the application to a cloud hosting service
+## R6. Deploy the application to a cloud hosting service
 <!-- Netlify or Heroku? -->
 
-# R7. Produce an application with an intuitive user interface
+## R7. Produce an application with an intuitive user interface
 
-# R8. User Testing
+## R8. User Testing
 - In the development environment
 - In the production environment
 
-# R9. Utilises a formal testing framework
+## R9. Utilises a formal testing framework
 
 #
 
