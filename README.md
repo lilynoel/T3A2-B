@@ -6,10 +6,10 @@
 Bone & Biscuit
 
 ### Deployed App
-[Lily Noël - T3A2-B | Bone & Biscuit | Full Stack App | Heroku ](https://github.com/lilynoel/T3A2-B) <!-- update link once deployed -->
+[T3A2-B | Bone & Biscuit - Full Stack App | Heroku ](https://github.com/lilynoel/T3A2-B) <!-- update link once deployed -->
 
 ### GitHub Repo
-[Lily Noël - T3A2-B | GitHub Repository](https://github.com/lilynoel/T3A2-B)
+[T3A2-B | GitHub Repository](https://github.com/lilynoel/T3A2-B)
 
 ### Developer Team
 PJ & Lily Noël
