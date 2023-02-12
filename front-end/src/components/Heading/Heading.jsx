@@ -1,6 +1,9 @@
+import styles from './Heading.module.scss';
+
 function Heading(props) {
-    const { content } = props;
-    return (<h1>{props.content}</h1>)
+
+    const { content, name } = props;
+    return <h1 className={styles.main_heading}>{content}</h1>;
 }
 
 export default Heading;
