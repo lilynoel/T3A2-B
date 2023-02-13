@@ -10,8 +10,9 @@ export default function ProductList() {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        getProducts().then(products => setProducts(products))
-     }, [])
+        getProducts().then((products) => setProducts(products));
+    }, []);
+    
     return (
         <div className={style.list}>
             {products.map((product) => (

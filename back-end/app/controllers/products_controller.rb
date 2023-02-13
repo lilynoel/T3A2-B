@@ -42,7 +42,6 @@ class ProductsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       begin
-
       @product = Product.find(params[:id])
       rescue => exception
         render json: {error: "Could not find product with id #{params[:id]}"}, status: 404
@@ -51,6 +50,7 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      params.require(:product).permit(:name, :price, :url, :ingredients)
+      # params.require(:product).permit(:name, :price, :url, :ingredients)
+      params.permit(:product, :name, :price, :url, :ingredients)
     end
 end
