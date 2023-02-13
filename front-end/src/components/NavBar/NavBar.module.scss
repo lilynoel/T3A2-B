@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nav_link {
+    margin-left: 1em;
+    color: black;
+    &:visited {
+        color: black;
+    }
+}

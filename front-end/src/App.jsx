@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <h1>Big Heading</h1>
+        <h1>Bone & Biscuit</h1>
         <NavBar/>
 
         <Routes> 
