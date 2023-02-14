@@ -23,11 +23,12 @@ function App() {
           <Route path='/products/:id' element={<ProductPageLoader />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-
-        <footer>My Paws</footer>
+        
+      <footer>My Paws</footer>
       </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
