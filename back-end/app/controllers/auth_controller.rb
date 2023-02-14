@@ -8,6 +8,15 @@ class AuthController < ApplicationController
         end
     end
 
+    def register
+        user = User.create(auth_params)
+        unless user.errors.any?
+            render json: user, status: 201
+        else
+            render json: {errors: user.errors.full_messages}, status: 400
+        end
+    end
+
     private 
 
     def auth_params
