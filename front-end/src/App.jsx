@@ -8,6 +8,7 @@ import Home from './pages/Home/HomePage';
 import ProductPageLoader from './containers/ProductPageLoader/ProductPageLoader';
 import NotFound from './components/NotFound/NotFound';
 import NavBar from './components/NavBar/NavBar';
+import CreateProductPage from './pages/CreateProductPage/CreateProductPage';
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<ProductList />} />
           <Route path='/products/:id' element={<ProductPageLoader />} />
+          <Route path='/products/new' element={<CreateProductPage />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-        
+
       <footer>My Paws</footer>
       </BrowserRouter>
     </div>
