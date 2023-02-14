@@ -12,6 +12,7 @@ import LoginPage from './pages/LoginPage/LoginPage';
 import { UserContextProvider } from './context/UserContextProvider';
 import Footer from './components/Footer/Footer';
 import MainLogo from './components/MainLogo/MainLogo';
+import LogOut from './components/LogOut/LogOut';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 
         <Routes> 
           <Route path='/login' element={<LoginPage />} />
+          <Route path='/logout' element={<LogOut />} />
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<ProductList />} />
           <Route path='/products/:id' element={<ProductPageLoader />} />

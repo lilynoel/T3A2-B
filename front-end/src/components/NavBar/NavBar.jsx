@@ -12,7 +12,7 @@ export default function NavBar() {
                 Home</NavLink>
             <NavLink className={styles.nav_link} to="/products">
              Products</NavLink>
-            {username ? <NavLink className={styles.login}>
+            {username ? <NavLink className={styles.login} to='/logout'> 
                 Logout</NavLink> : <NavLink to='/login' className={styles.login}>
                 Login</NavLink>}
         </nav>
