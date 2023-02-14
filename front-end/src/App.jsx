@@ -10,10 +10,15 @@ import NotFound from './components/NotFound/NotFound';
 import NavBar from './components/NavBar/NavBar';
 import CreateProductPage from './pages/CreateProductPage/CreateProductPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+import { UserContextProvider } from './context/UserContextProvider';
 
 function App() {
+  
+  
+  
   return (
-    <div>
+
+    <UserContextProvider>
       <BrowserRouter>
         <h1>Bone & Biscuit</h1>
         <NavBar/>
@@ -28,8 +33,8 @@ function App() {
         </Routes>
 
       <footer>My Paws</footer>
-      </BrowserRouter>
-    </div>
+        </BrowserRouter>
+    </UserContextProvider>
   );
 }
 
