@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../context/UserContextProvider';
+import { userLogin } from '../../services/user-services';
 
 
 
 const LoginPage = () => {
     const [formValues, setFormValues] = useState({ email: '', password: '' });
+    const navigate = useNavigate();
+    const {setUserDetails} = useContext(UserContext)
     
     const onFormSubmit = (event) => {
         event.preventDefault();
-        console.log("Form submit");
-        console.log(formValues);
+        userLogin(formValues)
+        .then((response) => setUserDetails(response))
+        .then(() => navigate('/'))
+        // .catch((error) => setError(error.message));
     };
 
     const onInputChange = (event) => {
@@ -16,14 +23,14 @@ const LoginPage = () => {
         setFormValues({ ...formValues, [id]: value });
     };
     return (
-        <form>
+        <form onSubmit={onFormSubmit}>
             <div>
                 <label>Email</label>
-                <input type='text' id='email' value={formValues.email} />
+                <input onChange={onInputChange} type='text' id='email' value={formValues.email} />
             </div>
             <div>
                 <label>Password</label>
-                <input type='password' id='password' value={formValues.password} />
+                <input onChange={onInputChange} type='password' id='password' value={formValues.password} />
             </div>
             <div>
                 <button type= 'submit'>Login</button>

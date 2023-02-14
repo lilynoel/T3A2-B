@@ -1,12 +1,35 @@
+
 .nav {
-    display: flex;
-    justify-content: flex-start;
+    overflow: hidden;
 }
 
+
 .nav_link {
-    margin-left: 1em;
-    color: black;
-    &:visited {
-        color: black;
-    }
+    float: left;
+    color: rgb(167, 169, 172);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.nav_link:hover {
+    color: #353333;
+    transition: 900ms ease;
+}
+
+
+.login {
+    float: right;
+    color: rgb(167, 169, 172);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.login:hover {
+        color: #353333;
+        transition: 900ms ease;
 }

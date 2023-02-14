@@ -1,5 +1,10 @@
+import { useContext } from 'react';
+import { UserContext } from '../../context/UserContextProvider';
+
 function HomePage() {
-    return (<h1> This is the home page! </h1>)
+    const { userDetails } = useContext(UserContext);
+    const { username } = userDetails
+    return (<h1> Welcome {username || 'guest!'} </h1>);
 }
 
 export default HomePage;
