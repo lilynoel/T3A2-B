@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ProductList from './components/ProductList/ProductList';
 import Heading from './components/Heading/Heading';
@@ -11,6 +10,9 @@ import NavBar from './components/NavBar/NavBar';
 import CreateProductPage from './pages/CreateProductPage/CreateProductPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import { UserContextProvider } from './context/UserContextProvider';
+import Footer from './components/Footer/Footer';
+import MainLogo from './components/MainLogo/MainLogo';
+
 
 function App() {
   
@@ -20,7 +22,7 @@ function App() {
 
     <UserContextProvider>
       <BrowserRouter>
-        <h1>Bone & Biscuit</h1>
+        <MainLogo />
         <NavBar/>
 
         <Routes> 
@@ -32,7 +34,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
 
-      <footer>My Paws</footer>
+        <Footer />
         </BrowserRouter>
     </UserContextProvider>
   );
