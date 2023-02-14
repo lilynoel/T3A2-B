@@ -15,6 +15,7 @@ export default function NavBar() {
             {username ? <NavLink className={styles.login} to='/logout'> 
                 Logout</NavLink> : <NavLink to='/login' className={styles.login}>
                 Login</NavLink>}
+            {username && role === 'admin' && <NavLink className={styles.nav_link} to='products/new'>Create New Product</NavLink>}
         </nav>
     );
 }
