@@ -19,6 +19,7 @@ function App() {
         <NavBar/>
 
         <Routes> 
+          <Route path='./login' element/>
           <Route path='/' element={<Home />} />
           <Route path='/products' element={<ProductList />} />
           <Route path='/products/:id' element={<ProductPageLoader />} />
