@@ -15,6 +15,7 @@ class ProductsController < ApplicationController
 
   # POST /products
   def create
+    pp product_params
     @product = Product.new(product_params)
 
     if @product.save
