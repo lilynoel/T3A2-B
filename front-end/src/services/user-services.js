@@ -1,16 +1,16 @@
 import api from "./api";
 
 export async function userLogin(details) {
-    try {
-      const response = await api.post("auth/login", details);
-      const { jwt } = response.data;
-      sessionStorage.setItem("jwt", jwt);
-      return response.data;
-    } catch (error) {
-      throw new Error(error.response.data.error);
-    }
+  try {
+    const response = await api.post("/auth/login", details);
+    const { jwt } = response.data;
+    sessionStorage.setItem("jwt", jwt);
+    return response.data;
+  } catch (error) {
+    throw new Error(error.response.data.error);
   }
-  
+}
+
 export async function registerUser(details) {
   try {
     const response = await api.post("/auth/register", details);

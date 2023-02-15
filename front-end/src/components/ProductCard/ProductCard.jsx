@@ -12,7 +12,7 @@ export default function ProductCard(props) {
         <div className={style.card}>
             <img src={url} alt={name} className={style.image} />
             <h2 className={style.name}>{name}</h2>
-            <h3 className={style.price}>{price}</h3>
+            <h3 className={style.price}>${price}</h3>
             <button onClick={onButtonClick}> See More </button>
         </div>
     );
