@@ -2,17 +2,17 @@
 
 ![store.png](docs/store.png)
 
-#### Application Name
-Bone & Biscuit
+### Application Name
+- Bone & Biscuit
 
-#### Deployed App
-[T3A2-B | Bone & Biscuit - Full Stack App | Netlify](https://bone-and-biscuit.netlify.app/) <!-- update link once deployed -->
+### Deployed App
+- [T3A2-B | Bone & Biscuit - Full Stack App | Netlify](https://bone-and-biscuit.netlify.app/) <!-- update link once deployed -->
 
-#### GitHub Repo
-[T3A2-B | GitHub Repository](https://github.com/lilynoel/T3A2-B)
+### GitHub Repo
+- [T3A2-B | GitHub Repository](https://github.com/lilynoel/T3A2-B)
 
-#### Developer Team
-PJ & Lily Noël
+### Developer Team
+- PJ & Lily Noël
 
 ## Description
 Bone & Biscuit is an online store for a local canine bakery specializing in baked biscuits and treats for dogs. 
