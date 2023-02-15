@@ -7,6 +7,7 @@ import { userLogin } from '../../services/user-services';
 
 const LoginPage = () => {
     const [formValues, setFormValues] = useState({ email: '', password: '' });
+    const [error, setError] = useState('');
     const navigate = useNavigate();
     const {setUserDetails} = useContext(UserContext)
     
@@ -15,7 +16,7 @@ const LoginPage = () => {
         userLogin(formValues)
         .then((response) => setUserDetails(response))
         .then(() => navigate('/'))
-        // .catch((error) => setError(error.message));
+        .catch((error) => setError(error.message));
     };
 
     const onInputChange = (event) => {
@@ -35,6 +36,7 @@ const LoginPage = () => {
             <div>
                 <button type= 'submit'>Login</button>
             </div>
+            {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
     );
 };
