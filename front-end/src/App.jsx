@@ -13,6 +13,7 @@ import { UserContextProvider } from './context/UserContextProvider';
 import Footer from './components/Footer/Footer';
 import MainLogo from './components/MainLogo/MainLogo';
 import LogOut from './components/LogOut/LogOut';
+import RegisterPage from './pages/RegisterPage/RegisterPage';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <NavBar/>
 
         <Routes> 
+          <Route path="/register" element={<RegisterPage /> } />
           <Route path='/login' element={<LoginPage />} />
           <Route path='/logout' element={<LogOut />} />
           <Route path='/' element={<Home />} />

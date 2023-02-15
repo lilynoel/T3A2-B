@@ -12,10 +12,20 @@ export default function NavBar() {
                 Home</NavLink>
             <NavLink className={styles.nav_link} to="/products">
              Products</NavLink>
-            {username ? <NavLink className={styles.login} to='/logout'> 
-                Logout</NavLink> : <NavLink to='/login' className={styles.login}>
-                Login</NavLink>}
-            {username && role === 'admin' && <NavLink className={styles.nav_link} to='products/new'>Create New Product</NavLink>}
+            
+            {username ? ( <NavLink className={styles.login} to='/logout'> 
+                Logout</NavLink>
+             ) : (
+                <>
+                <NavLink to='/login' className={styles.login}>
+                Login</NavLink>
+                <NavLink to='/register' className={styles.login}>
+                Register</NavLink>
+                </>
+               )}
+            {username && role === 'admin' && <NavLink className={styles.nav_link} to='products/new'>
+                New Listing 
+            </NavLink>}
         </nav>
     );
 }
