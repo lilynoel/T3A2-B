@@ -18,7 +18,7 @@
 Bone & Biscuit is an online store for a local canine bakery specializing in baked biscuits and treats for dogs. 
 
 ### Purpose
-- The purpose of this application is to provide a service for dog owners to both seek out and place an order for artisan dog treats. Bone & Biscuit offers an online ordering system where consumers may place an order for collection.  Payments are not handled by the application. Payment is made on collection of the product in store. 
+The purpose of this application is to provide a service for dog owners to both seek out and place an order for artisan dog treats. Bone & Biscuit offers an online ordering system where consumers may place an order for collection.  Payments are not handled by the application. Payment is made on collection of the product in store. 
 
 ### Functionality / Features
 
