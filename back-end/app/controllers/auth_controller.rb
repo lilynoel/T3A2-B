@@ -14,8 +14,7 @@ pp auth_params
   def register 
     user = User.create(auth_params)
     unless user.errors.any?
-    render json: user, status: 201
-    #   render json: {jwt: token, username: user.username, role: user.role}, status: 201
+      render json: {jwt: token, username: user.username, role: user.role}, status: 201
     else 
       render json: {errors: user.errors.full_messages}, status: 400
     end
