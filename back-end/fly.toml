@@ -1,4 +1,4 @@
-# fly.toml file generated for bone-and-biscuit on 2023-02-15T18:22:44+11:00
+# fly.toml file generated for bone-and-biscuit on 2023-02-15T20:01:55+11:00
 
 app = "bone-and-biscuit"
 kill_signal = "SIGINT"

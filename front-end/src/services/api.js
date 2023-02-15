@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'https://bone-and-biscuit.fly.dev'
+  baseURL: "https://bone-and-biscuit.herokuapp.com",
 });
 
 api.interceptors.request.use((req) => {
