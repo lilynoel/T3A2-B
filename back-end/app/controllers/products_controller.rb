@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: %i[ show update destroy ]
+  before_action :set_product, only: [:show, :update, :destroy]
   before_action :authenticate, only: [:create, :update, :destroy]
-
+  before_action :restrict_to_admin, only: [:create, :update, :destroy]
   # GET /products
   def index
     @products = Product.all
@@ -44,7 +44,7 @@ class ProductsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_product
       begin
-      @product = Product.find(params[:id])
+        @product = Product.find(params[:id])
       rescue => exception
         render json: {error: "Could not find product with id #{params[:id]}"}, status: 404
       end
@@ -52,7 +52,6 @@ class ProductsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def product_params
-      # params.require(:product).permit(:name, :price, :url, :ingredients)
       params.permit(:product, :name, :price, :url, :ingredients)
     end
 end

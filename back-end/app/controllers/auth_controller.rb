@@ -1,7 +1,6 @@
 class AuthController < ApplicationController
   before_action :authenticate, only: [:my_details]
   def login 
-pp auth_params
    user = User.find_by(email: auth_params[:email])
    if(user&.authenticate(auth_params[:password]))
     token = JwtService.encode(user);

@@ -24,8 +24,9 @@ class ApplicationController < ActionController::API
     request.headers["Authorization"]&.split(" ")&.last
   end
 
-#   def restrict_to_admin
-#     unless @current_user.role == 'admin'
-#       render json: {error: "Only admin users can do this"}, status: 403
-#     end
+  def restrict_to_admin
+    unless @current_user.role == 'admin'
+      render json: {error: "Only admin users can do this"}, status: 403
+    end
   end 
+end
