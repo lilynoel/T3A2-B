@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { getProductById } from '../../services/product-services';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { UserContext } from '../../context/UserContextProvider';
+import { createOrder } from '../../services/order-service';
 
 export default function ProductPage(props) {
   const [quantity, setQuantity] = useState(1);
   const { product } = props;
   const { userDetails } = useContext(UserContext);
   const { username } = userDetails;
+  const navigate = useNavigate();
 
   const onDecrementButtonClick = () => {
     if (quantity < 2) {
@@ -22,6 +24,10 @@ export default function ProductPage(props) {
     setQuantity(quantity + 1);
   };
 
+  const onButtonClick = () => {
+    createOrder({ product_id: product.id, quantity: quantity }).then(() => navigate('/orders'))
+  }; 
+
   return (
     <>
       {
@@ -34,7 +40,8 @@ export default function ProductPage(props) {
               <p>Quantity: {quantity}</p>
               <button onClick={onDecrementButtonClick}>-</button>
               <button onClick={onIncrementButtonClick}>+</button>
-              <button>Create Order</button>
+              <button onClick={onButtonClick}
+              >Create Order</button>
             </>
           )}
         </div>
