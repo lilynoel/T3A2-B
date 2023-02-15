@@ -87,9 +87,6 @@ This application was built using Rails 7.0.4.2, Ruby 3.1.1, React.js, JavaScript
 ##### cors
 - Cross-Origin Resource Sharing was used is in order to allows web browsers to make cross-domain HTTP requests in a secure manner.
 
-
-![trello3.png](docs/trello3.png)
-
 ## Produce a working application that meets client and user needs
 Although simple in its interface, Bone & Biscuit is a functional application that meets the needs of the clients and users of its niche. The application successfully processes and authenticates user registration and  login/ logout functions. Users are able to view available products and place an order when logged in.
 
@@ -120,12 +117,14 @@ Order Page
 
 #### Development testing
 
-JWT token test
+- JWT token test 
+  
 ![jwt.png](docs/jwt.png)
 
 <br>
 
-Retrieve user details 
+- Retrieve user details 
+
 ![details.png](docs/details.png)
 
 <br>
@@ -234,32 +233,19 @@ Sign up page
 
 ## Team work • Agile Project Management Methodology | Trello
 
-<h4 align="center">
+We decided a Trello board was the best management methodology for our project giving us the ability to set deadlines and individual tasks catered towards both our strengths and weaknesses. Trello was a particularly useful option as it provided us with the capability to change task delegations seamlessly where required. 
 
 ![trello1.png](docs/trello1.png)
 
-<br>
-
 ![trello2.png](docs/trello2.png)
-
-<br>
 
 ![trello3.png](docs/trello3.png)
 
-<br>
-
 ![trello4.png](docs/trello4.png)
-
-<br>
 
 ![trello5.png](docs/trello5.png)
 
-<br>
-
 ![trello6.png](docs/trello6.png)
-
-</h4>
-
 
 #
 
