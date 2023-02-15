@@ -17,44 +17,97 @@ PJ & Lily Noël
 
 <!-- ** Reminder to import contents of Part A README here. ** -->
 
-
-<!-- 
 ## R1. Tech Stack 
 Bone & Biscuit was created using the following tech stack:
 - Rails
 - React.js
+- netlify
+- Heroku
 
 ## R2. Code Requirements 
 
-- Separates the program into modules that each deal with one particular focus, or concern
-- Demonstrates DRY (Don’t Repeat Yourself) coding principles
-- Uses appropriate libraries
-- Demonstrates good code flow control for user stories
-- Applies Object Oriented (OO) principles/patterns
-- Uses appropriate data structures
-  
-## R3. Employ and utilise proper source control methodology (git)
+## Libraries 
+
+### react-router-dom 
+- This was used to provide routing capabilities in our app, React Router DOM allows us to define client-side routes within the React components.
+
+### axios 
+- This library was used to make requests to the API from the frontend to the backend.
+
+### jsonwebtoken 
+- This was used to authorize users for extra security by assigning tokens to users represent claims being transferred between the front and back ends of the application.
+
+### cors
+- Cross-Origin Resource Sharing was used is in order to allows web browsers to make cross-domain HTTP requests in a secure manner.
+
+
+## R3. Employ and utilise proper source control
+
+![gitmerge.png](docs/gitmerge.png)
+<br>
+
+![gitcommit.png](docs/gitcommit.png)
 
 ## R4. Demonstrate your ability to work in a team
-- Use a recognised project management methodology
-- Use a recognised task delegation methodology
+We decided a Trello board was the best management methodology for our project giving us the ability to set deadlines and individual tasks catered for both our strengths and weaknesses.
 
+![trello3.png](docs/trello3.png)
+
+<!-->
 ## R5. Produce a working application that meets client and user needs
+-->
 
 ## R6. Deploy the application to a cloud hosting service
-<!-- Netlify or Heroku? 
+
+### Back-end
+https://bone-and-biscuit.herokuapp.com
+
+### Front-end
+https://bone-and-biscuit.netlify.app/
+
 
 ## R7. Produce an application with an intuitive user interface
 
+Home Page
+![UI](docs/UI.png)
+
+<br>
+
+Products Page
+![item.png](docs/item.png)
+
+<br>
+
+Order Page
+![order.png](docs/order.png)
+
 ## R8. User Testing
-- In the development environment
-- In the production environment
 
-## R9. Utilises a formal testing framework
+### Manual testing
+![manual.png](docs/manual.png)
 
--->
+### Development testing
 
-#
+JWT token test
+![jwt.png](docs/jwt.png)
+
+<br>
+
+Retrieve user details 
+![details.png](docs/details.png)
+
+<br>
+
+### Production environment
+
+Automated tests
+![test1.png](docs/test1.png)
+
+<br>
+
+![test2.png](docs/test2.png)
+
+
 
 <h5 align="center">
 
