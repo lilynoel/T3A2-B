@@ -103,7 +103,7 @@ Logged in users also have the capability of viewing their own orders the corresp
 
  Home Page 
 
-![ui.png](docs/ui.png)
+![userinterface.png](docs/userinterface.png)
 
 Products Page 
 
