@@ -12,9 +12,14 @@ export default function NavBar() {
                 Home</NavLink>
             <NavLink className={styles.nav_link} to="/products">
              Products</NavLink>
-            
-            {username ? ( <NavLink className={styles.login} to='/logout'> 
+               
+            {username ? (
+                 <> <NavLink className={styles.login} to='/logout'> 
                 Logout</NavLink>
+                <NavLink to='/orders' className={styles.nav_link}>
+                Orders</NavLink>
+                </>
+            
              ) : (
                 <>
                 <NavLink to='/login' className={styles.login}>
@@ -24,7 +29,7 @@ export default function NavBar() {
                 </>
                )}
             {username && role === 'admin' && <NavLink className={styles.nav_link} to='products/new'>
-                New Listing 
+                New 
             </NavLink>}
         </nav>
     );

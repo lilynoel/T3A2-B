@@ -14,6 +14,7 @@ import Footer from './components/Footer/Footer';
 import MainLogo from './components/MainLogo/MainLogo';
 import LogOut from './components/LogOut/LogOut';
 import RegisterPage from './pages/RegisterPage/RegisterPage';
+import OrderList from './components/OrderList/OrderList';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/logout' element={<LogOut />} />
           <Route path='/' element={<Home />} />
+          <Route path='/orders' element={<OrderList />} />
           <Route path='/products' element={<ProductList />} />
           <Route path='/products/:id' element={<ProductPageLoader />} />
           <Route path='/products/new' element={<CreateProductPage />} />
